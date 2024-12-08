@@ -1,0 +1,34 @@
+{
+  "name": "cpi-flow-logger",
+  "version": "1.0.0",
+  "description": "SAP BTP CAP application for CPI integration flow logging",
+  "repository": "<Add your repository>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^6",
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "passport": "^0",
+    "hdb": "^0.19.0",
+    "@sap/hana-client": "^2.13.22"
+  },
+  "devDependencies": {
+    "@sap/ux-specification": "^1.108.7",
+    "sqlite3": "^5.0.4"
+  },
+  "scripts": {
+    "start": "cds run",
+    "watch": "cds watch"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "hana"
+      },
+      "auth": {
+        "kind": "xsuaa"
+      }
+    }
+  }
+}
